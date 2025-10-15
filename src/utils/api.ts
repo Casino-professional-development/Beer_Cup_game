@@ -1,5 +1,5 @@
 // API utility functions for backend integration
-const API_BASE_URL = 'http://localhost:3001/api/beers';
+const API_BASE_URL = (window as any).env?.SERVER_API || 'http://localhost:3001/api/beers';
 
 export interface BeerRecord {
   _id?: string;
