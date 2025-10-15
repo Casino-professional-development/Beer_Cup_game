@@ -1,0 +1,22 @@
+.layout-top{
+  box-sizing: border-box;
+  padding: 8px 20px 0;
+  position: absolute;
+  width: calc(100% - 37px );
+  z-index: 5;
+
+  .top-content{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  p{
+    text-shadow: 0 0 2px #fff;
+    color: white;
+    font-size: 1.4vw;
+    font-weight: 600;
+    margin: 0;
+    font-family: Noto Sans, Sans-Serif;
+  }
+}

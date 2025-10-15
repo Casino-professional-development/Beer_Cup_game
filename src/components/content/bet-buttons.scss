@@ -1,0 +1,21 @@
+.bet-button {
+  background: rgba(255,255,255,0.06);
+  border: none;
+  font-size: clamp(16px, 1.6vw, 22px);
+  font-family: inherit;
+  color: #fff;
+  cursor: pointer;
+  padding: 0;
+  border-radius: 50%;
+  width: 1vw;
+  height: 1vw;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  /* Removed interactive visual effects */
+  
+  &:disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+  }
+}

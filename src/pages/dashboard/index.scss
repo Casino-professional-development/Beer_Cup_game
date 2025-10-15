@@ -1,0 +1,12 @@
+.dashboard {
+  display: flex;
+  background-color: black;
+  height: 100vh;
+  overflow: hidden; /* Prevent scrolling */
+  width: 100vw;
+  align-items: center;
+
+  .dashboard-rigth{
+    width: calc(100vw - 37px);
+  }
+}

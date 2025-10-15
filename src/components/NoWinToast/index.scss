@@ -1,0 +1,52 @@
+.no-win-toast {
+  position: fixed;
+  left: 50%;
+  bottom: 6%;
+  transform: translateX(-50%);
+  width: 20vw;
+  height: calc(20vw / 4);
+  min-width: 200px;
+  min-height: 50px;
+  max-width: 360px;
+  max-height: 100px;
+  background: rgba(120, 45, 30, 0.9);
+  border: 2px solid rgba(60, 25, 20, 0.9);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #f0e6dc;
+  font-weight: 800;
+  letter-spacing: 1px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.35);
+  z-index: 1200;
+  animation: noWinEnter 0.35s ease-out, noWinPulse 1.3s ease-in-out 0.35s infinite alternate;
+}
+
+.no-win-text {
+  font-size: 1.2rem;
+}
+
+@keyframes noWinEnter {
+  from {
+    transform: translateX(-50%) translateY(8px) scale(0.98);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(-50%) translateY(0) scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes noWinPulse {
+  from {
+    transform: translateX(-50%) translateY(0) scale(1);
+  }
+  to {
+    transform: translateX(-50%) translateY(-2px) scale(1.02);
+  }
+}
+
+ 
+
+

@@ -1,0 +1,18 @@
+.content {
+  display: flex;
+  background-color: black;
+  height: 100vh;
+  overflow: hidden; /* Prevent scrolling */
+  width: 100vw;
+}
+
+.content-right {
+  display: flex;
+  width: 100%;
+  align-items: center;
+}
+
+.content-wrapper {
+  position: relative;
+  width: calc(100vw - 37px);
+}

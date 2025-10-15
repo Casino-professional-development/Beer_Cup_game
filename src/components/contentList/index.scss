@@ -1,0 +1,12 @@
+.content-list{
+  display: flex;
+  flex-direction: column;
+  width: 5vw;
+  justify-content: flex-end;
+  align-items: center;
+  
+  img {
+    width: 2.2vw;
+    margin: 1vw 0;
+  }
+}

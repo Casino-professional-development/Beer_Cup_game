@@ -1,0 +1,490 @@
+.cupcell-container {
+  width: 17.5%;
+  display: flex;
+  justify-content: center;
+  box-sizing: border-box;
+
+  img {
+    cursor: pointer;
+  }
+
+  .cupcell-container-item {
+    display: flex;
+    height: 41.9vw;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+    .cupcell-container-top {
+      width: 3.2vw;
+      position: relative;
+      z-index: 2;
+      pointer-events: none;
+      z-index: 13;
+    }
+
+    .cupcell-container-body {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      align-items: center;
+      gap: 1vw;
+
+      .reveal-window-body {
+        width: 9.5vw;
+        height: 22vw;
+        position: absolute;
+        margin-top: 3.4vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+        .bubble {
+          display: flex;
+          justify-content: center;
+          z-index: 14;
+
+          .bubble1 {
+            width: 5.3vw;
+            position: absolute;
+            margin-top: -1.3vw;
+            z-index: 14;
+            transform: rotateX(-20deg);
+            animation: bubble1 1000ms;
+          }
+          .bubble2 {
+            width: 6.7vw;
+            position: absolute;
+            margin-top: -1.45vw;
+            z-index: 14;
+            animation: bubble2 1000ms;
+          }
+          .bubble3 {
+            width: 8.7vw;
+            position: absolute;
+            margin-top: -2vw;
+            z-index: 14;
+            animation: bubble3 1000ms;
+            border-radius: 0 0 2.5vw 2.5vw;
+          }
+          .bubble4 {
+            width: 9.9vw;
+            position: absolute;
+            margin-top: -2.2vw;
+            z-index: 14;
+            animation: bubble4 1000ms;
+          }
+          .bubble5 {
+            width: 9.7vw;
+            position: absolute;
+            margin-top: -3.7vw;
+            z-index: 14;
+            animation: bubble5 1000ms;
+          }
+        }
+        .reveal-window {
+          width: 10vw;
+          overflow: hidden;
+          border-radius: 8px;
+          height: 0px;
+          transition: height 700ms ease 300ms;
+          display: flex;
+          align-items: flex-end; /* keep image bottom-aligned so it reveals from bottom */
+          justify-content: center;
+          background: transparent;
+          z-index: 10;
+
+          .BeerImg {
+            width: 10vw;
+            display: block;
+            height: auto;
+            height: 23.5vw;
+            z-index: 10;
+          }
+        }
+      }
+
+      .reveal-water-body {
+        width: 9.6vw;
+        height: 22vw;
+        position: absolute;
+        margin-top: 3.4vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+
+        .reveal-water {
+          width: 10vw;
+          overflow: hidden;
+          z-index: 10;
+          position: relative;
+          transition: height 700ms ease 300ms;
+          display: flex;
+          justify-content: center;
+          align-items: flex-end;
+          margin-bottom: 1vw;
+
+          .waters {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            align-items: center;
+
+            .water {
+              width: 4vw;
+              height: auto;
+              display: block;
+              position: absolute;
+              z-index: 3;
+              animation: water 10s infinite;
+              transform: translateY(4.5vw);
+            }
+
+            .water1 {
+              width: 4vw;
+              height: auto;
+              display: block;
+              position: absolute;
+              z-index: 3;
+              animation: water1 10s infinite 1.5s;
+              transform: translateY(4.5vw);
+            }
+
+            .water2 {
+              width: 4vw;
+              height: auto;
+              display: block;
+              position: absolute;
+              z-index: 3;
+              animation: water2 10s infinite 3s;
+              transform: translateY(4.5vw);
+              opacity: 0.7;
+            }
+
+            .water3 {
+              width: 4vw;
+              height: auto;
+              display: block;
+              position: absolute;
+              z-index: 3;
+              animation: water3 10s infinite 4.5s;
+              transform: translateY(6.3vw);
+              opacity: 0.8;
+            }
+
+            .water4 {
+              width: 4vw;
+              height: auto;
+              display: block;
+              position: absolute;
+              z-index: 3;
+              animation: water1 10s infinite 6s;
+              transform: translateY(4.5vw);
+              opacity: 0.8;
+            }
+
+            .water5 {
+              width: 4vw;
+              height: auto;
+              display: block;
+              position: absolute;
+              z-index: 3;
+              animation: water 10s infinite 8s;
+              transform: translateY(6vw);
+              opacity: 0.8;
+            }
+          }
+        }
+      }
+
+      .GalssWall {
+        position: absolute;
+        width: 9.7vw;
+        height: 24vw;
+        margin-top: 1vw;
+      }
+
+      .GlassEffect {
+        position: absolute;
+        width: 9.2vw;
+        margin-top: 2.2vw;
+        margin-left: 0.3vw;
+        height: 23.5vw;
+        z-index: 13;
+        animation: GlassEffect 1.2s;
+      }
+
+      .fullMug {
+        display: flex;
+        justify-content: center;
+      }
+      .cupcell-container-body-top {
+        .effect {
+          width: 10.5vw;
+          height: 5.5vw;
+          position: absolute;
+          z-index: 5;
+
+          img {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            box-sizing: border-box;
+            box-shadow: 0 0 3vw #f7ec53;
+            animation: pulseEffect 5s infinite;
+            opacity: 0;
+            animation-delay: 0.8s;
+          }
+        }
+      }
+
+      .emplyGlassEffect {
+        width: 16vw;
+        margin-top: -2.8vw;
+        position: absolute;
+        animation: emttyglasseffect 1.2s;
+        opacity: 0;
+      }
+      .emptyGlassImg {
+        width: 10.5vw;
+        animation: emttyglass 1.2s;
+        z-index: 9;
+      }
+
+      .Under {
+        display: flex;
+        justify-content: first baseline;
+        align-items: center;
+        width: 10vw;
+        height: 5vw;
+        border-radius: 50%;
+        background-color: #672e24;
+        border: 3px solid rgb(148 88 78);
+        animation: under 0.8s;
+
+        p {
+          margin: auto;
+          text-align: center;
+          font-size: 2vw;
+          color: white;
+          opacity: 0.8;
+          box-sizing: border-box;
+          font-weight: 700;
+        }
+
+        .under-p{
+          text-shadow: 0 0 1vw rgba(253, 253, 253, 0.5);
+        }
+
+        .fourth-no-win-p{
+          text-shadow: 0 0 1vw rgb(17, 32, 243);
+        }
+      }
+
+      .cupcell-container-control {
+        display: flex;
+        justify-content: center;
+        gap: 1vw;
+        align-items: center;
+        z-index: 100;
+
+        .AddbeerImg {
+          width: 3.5vw;
+        }
+
+        .EndbeerImg {
+          width: 2vw;
+          height: 2vw;
+        }
+      }
+    }
+  }
+}
+
+@keyframes pulseEffect {
+  0% {
+    transform: scale(1.05);
+    opacity: 0.5;
+  }
+  20% {
+    transform: scale(1.15);
+    opacity: 1;
+  }
+  40% {
+    transform: scale(1.05);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1.05);
+    opacity: 0;
+  }
+}
+
+@keyframes GlassEffect {
+  0% {
+    transform: scale(0.9);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes emttyglasseffect {
+  0% {
+    transform: scale(0.9);
+    opacity: 0.5;
+  }
+
+  5% {
+    transform: scale(0.905);
+    opacity: 1;
+  }
+
+  100% {
+    transform: scale(1);
+    opacity: 0;
+  }
+}
+
+@keyframes emttyglass {
+  0% {
+    transform: scale(0.9);
+    opacity: 0;
+  }
+
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes bubble1 {
+  0% {
+    width: 6vw;
+    opacity: 0;
+  }
+  39.9% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 1;
+  }
+  100% {
+    width: 5.3vw;
+    opacity: 1;
+  }
+}
+
+@keyframes bubble2 {
+  0% {
+    width: 5.3vw;
+    opacity: 1;
+  }
+  40% {
+    width: 5.3vw;
+    opacity: 1;
+  }
+  100% {
+    width: 6.7vw;
+    opacity: 1;
+  }
+}
+
+@keyframes bubble3 {
+  0% {
+    width: 6.7vw;
+    opacity: 1;
+  }
+  40% {
+    width: 6.7vw;
+    opacity: 1;
+  }
+  100% {
+    width: 8.7vw;
+    opacity: 1;
+  }
+}
+
+@keyframes bubble4 {
+  0% {
+    width: 8.7vw;
+    opacity: 1;
+  }
+  40% {
+    width: 8.7vw;
+    opacity: 1;
+  }
+  100% {
+    width: 9.9vw;
+    opacity: 1;
+  }
+}
+
+@keyframes bubble5 {
+  0% {
+    width: 9.9vw;
+    opacity: 1;
+  }
+  40% {
+    width: 9.9vw;
+    opacity: 1;
+  }
+  100% {
+    width: 9.7vw;
+    opacity: 1;
+  }
+}
+
+@keyframes water {
+  0% {
+    transform: translateY(6vw);
+  }
+  100% {
+    transform: translateY(-20vw);
+  }
+}
+
+@keyframes water1 {
+  0% {
+    transform: translateY(4.5vw);
+  }
+  100% {
+    transform: translateY(-20vw);
+  }
+}
+
+@keyframes water2 {
+  0% {
+    transform: translateY(4.5vw);
+  }
+  100% {
+    transform: translateY(-20vw);
+  }
+}
+
+@keyframes water3 {
+  0% {
+    transform: translateY(6.3vw);
+  }
+  100% {
+    transform: translateY(-20vw);
+  }
+}
+
+@keyframes under {
+  0% {
+    opacity: 0;
+  }
+  70% {
+    opacity: 0;
+  }
+  70.5% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+

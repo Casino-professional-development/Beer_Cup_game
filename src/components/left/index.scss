@@ -1,0 +1,157 @@
+.dashboard-left {
+  display: flex;
+  height: 100vh;
+  z-index: 50;
+  
+  .left-slide-control {
+    width: 36px;
+    background: #19232c;
+    border-right: 1px solid #27343f;
+    display: flex;
+    flex-direction: column;
+
+    .top {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      box-sizing: border-box;
+      padding: 10px 0;
+  
+      .logo {
+        width: 14px;
+        overflow: hidden;
+  
+        img {
+          height: 20px;
+        }
+  
+      }
+    }
+  
+    .left-slide {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex: 1;
+    
+      .left-slide-button { 
+          
+          img {
+            width: 10px;
+            transition: 0.1s;
+          }      
+      }
+    }
+  }
+
+
+  .left-slide-container {
+    height: 100%;
+    box-sizing: border-box;
+    background-color: #19232c;
+    transition: 0.1s;
+    width: 0;
+    overflow-x: hidden;
+    position: absolute;
+    margin-left: 37px;
+    z-index: 10;
+
+    span {
+      color: #fff;
+      font-size: 24px;
+      font-family:  Noto Sans, Sans-Serif;
+    }    
+
+
+    p{
+      margin: 0 0 0 5px;
+      font-size: 24px;
+      font-family: Noto Sans, Sans-Serif;
+      font-weight: 400;
+    }
+
+    .left-slide-container-item1 {
+      width: 100%;
+      box-sizing: border-box;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .left-slide-container-item1-button1 {
+        display: flex;
+        width: 150px;
+        box-sizing: border-box;
+        padding: 14px 5px;
+        justify-content: space-between;
+        cursor: pointer;
+      }
+
+      .left-slide-container-item1-button1:hover span {
+        color: #44be4c;
+      }
+
+      .left-slide-container-item1-button2 {
+        display: flex;
+        box-sizing: border-box;
+        border: 1px solid #4a5b68;
+        cursor: pointer;
+
+        .icon {       
+          font-size: 20px;
+        }
+
+        .like, .unlike {
+          display: flex;
+          box-sizing: border-box;
+          padding: 8px;
+          color: #fff;
+        }
+
+        .unlike {
+          border-left: 1px solid #4a5b68;
+        }
+
+
+        .like:hover  {
+          color: #44be4c;
+        }
+
+        .unlike:hover {
+          color: #44be4c;
+        }
+      }
+    }
+
+    .left-slide-container-item2{
+      .left-casino{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        box-sizing: border-box;
+        padding: 16px 5px;
+        color: #fff;
+        border: 1px solid #4a5b68;
+        margin: 20px 0;
+        cursor: pointer;
+      
+      }
+    }
+
+    .left-slide-container-item3{
+      .left-list{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        box-sizing: border-box;
+        padding: 16px 5px;
+        color: #fff;
+        border: 1px solid #4a5b68;
+        margin: 8px 0;
+        cursor: pointer;
+      }
+    }
+  }
+
+}
